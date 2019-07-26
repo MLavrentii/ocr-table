@@ -9,4 +9,7 @@ import shlex
 # subprocess.call(['./extract_text.sh'])
 # Run above if no parameters are required
 
-subprocess.call(shlex.split('./extract_text.sh ./pdf/ ./txt/'))
+#subprocess.call(shlex.split('./extract_text.sh ./pdf/ ./txt/'))
+
+#subprocess.call(["bash", "extract_text.sh", "./pdf/", "./txt/"])
+subprocess.call("extract_text.bat ./pdf/ ./txt/", shell=True)
